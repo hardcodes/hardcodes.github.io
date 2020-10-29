@@ -1,0 +1,6 @@
+[book]
+authors = ["Sven Putze"]
+language = "en"
+multilingual = false
+src = "src"
+title = "hardcodes"
