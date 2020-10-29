@@ -3,8 +3,10 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>20200601 - I need space - hardcodes</title>
+        <title></title>
         
+        
+        <base href="/">
         
 
 
@@ -95,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="2012-06-01--2.html" class="active"><strong aria-hidden="true">1.</strong> 20200601 - I need space</a></li><li class="chapter-item expanded "><a href="2012-06-01--1.html"><strong aria-hidden="true">2.</strong> 20200601 - Yes, it's a blog!</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="2012-06-01--2.html"><strong aria-hidden="true">1.</strong> 20200601 - I need space</a></li><li class="chapter-item expanded "><a href="2012-06-01--1.html"><strong aria-hidden="true">2.</strong> 20200601 - Yes, it's a blog!</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,15 +165,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#i-need-space" id="i-need-space">I need space</a></h1>
-<p>There is this fruity company from Cupertino, giving a development environment to the people, called Xcode. It's free (as in free beer not as in free speech). It's buggy (sorry to say that - but it really is) and I often wonder if any of the people at Apple HQ ever tried to use it on a Macbook pro 13&quot;?</p>
-<p>As of today it is still buyable hardware on their store, so they should have tried it. What I am ranting about is this:</p>
-<p><img src="./gfx/4.jpg" alt="" /></p>
-<p>Now compare this to AppCode:</p>
-<p><img src="./gfx/5.jpg" alt="" /></p>
-<p>You get the difference, don't you?</p>
-<p>Yes, I could use those buttons in the upper right corner to get more space in the editor. And ten seconds after that I may need the left or right pane again, move the mouse pointer all the way up and change it back. Then I need more space...</p>
-<p>And for the clever ones mumbling something like keyboard shortcut: have you ever tried those on a German keyboard? Vulcans may like that, I do not!</p>
+                        <h1><a class="header" href="#document-not-found-404" id="document-not-found-404">Document not found (404)</a></h1>
+<p>This URL is invalid, sorry. Please use the navigation bar or search to continue.</p>
 
                     </main>
 
@@ -179,10 +174,6 @@
                         <!-- Mobile navigation buttons -->
                         
 
-                        
-                            <a rel="next" href="2012-06-01--1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -194,14 +185,25 @@
                 
 
                 
-                    <a rel="next" href="2012-06-01--1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                
             </nav>
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
