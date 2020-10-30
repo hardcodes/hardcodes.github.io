@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>20130329 - Boost libraries on OSX - first contact - hardcodes</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="20120601--1.html"><strong aria-hidden="true">1.</strong> 20120601 - Yes, it's a blog!</a></li><li class="chapter-item expanded "><a href="20120601--3.html"><strong aria-hidden="true">2.</strong> 20120601 - Jumpy on Amiga</a></li><li class="chapter-item expanded "><a href="20120601--2.html"><strong aria-hidden="true">3.</strong> 20120601 - I need space</a></li><li class="chapter-item expanded "><a href="20120619--1.html"><strong aria-hidden="true">4.</strong> 20120619 - No filesystem needed?</a></li><li class="chapter-item expanded "><a href="20120610--1.html"><strong aria-hidden="true">5.</strong> 20120610 - One-way globalization</a></li><li class="chapter-item expanded "><a href="20120603--1.html"><strong aria-hidden="true">6.</strong> 20120603 - ITIL burger anyone?</a></li><li class="chapter-item expanded "><a href="20120620--1.html"><strong aria-hidden="true">7.</strong> 20120620 - Find the button</a></li><li class="chapter-item expanded "><a href="20120621--1.html"><strong aria-hidden="true">8.</strong> 20120621 - How to ask questions</a></li><li class="chapter-item expanded "><a href="20120704--1.html"><strong aria-hidden="true">9.</strong> 20120407 - Back to the Mac</a></li><li class="chapter-item expanded "><a href="20120716--1.html"><strong aria-hidden="true">10.</strong> 20120716 - Trust the cloud</a></li><li class="chapter-item expanded "><a href="20120727--1.html"><strong aria-hidden="true">11.</strong> 20120627 - Change network adapter setting on Windows Server 2008 R2</a></li><li class="chapter-item expanded "><a href="20120813--1.html"><strong aria-hidden="true">12.</strong> 20120813 - Play with Qt</a></li><li class="chapter-item expanded "><a href="20120817--1.html"><strong aria-hidden="true">13.</strong> 20120817 - On to pastures new</a></li><li class="chapter-item expanded "><a href="20120912--1.html"><strong aria-hidden="true">14.</strong> 20120912 - 999 USD</a></li><li class="chapter-item expanded "><a href="20120913--1.html"><strong aria-hidden="true">15.</strong> 20120913 - Apple goes south</a></li><li class="chapter-item expanded "><a href="20120921--1.html"><strong aria-hidden="true">16.</strong> 20120921 - Apple and a..h.l.s</a></li><li class="chapter-item expanded "><a href="20120922--1.html"><strong aria-hidden="true">17.</strong> 20120922 - QuickMinder and iOS6, game over?</a></li><li class="chapter-item expanded "><a href="20120923--1.html"><strong aria-hidden="true">18.</strong> 20120923 - How Apple’s Obsession with Google Is Hurting Apple</a></li><li class="chapter-item expanded "><a href="20120926--1.html"><strong aria-hidden="true">19.</strong> 20120926 - Useless features</a></li><li class="chapter-item expanded "><a href="20121006--1.html"><strong aria-hidden="true">20.</strong> 20121006 - Daily UI hell</a></li><li class="chapter-item expanded "><a href="20121013--1.html"><strong aria-hidden="true">21.</strong> 20121013 - Old habits</a></li><li class="chapter-item expanded "><a href="20121016--1.html"><strong aria-hidden="true">22.</strong> 20121016 - Open with...</a></li><li class="chapter-item expanded "><a href="20121101--1.html"><strong aria-hidden="true">23.</strong> 20121101 - Quickminder</a></li><li class="chapter-item expanded "><a href="20121101--2.html"><strong aria-hidden="true">24.</strong> 20121101 - JumpyRally</a></li><li class="chapter-item expanded "><a href="20130115--1.html"><strong aria-hidden="true">25.</strong> 20130115 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 1</a></li><li class="chapter-item expanded "><a href="20130121--1.html"><strong aria-hidden="true">26.</strong> 20130121 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 2</a></li><li class="chapter-item expanded "><a href="20130123--1.html"><strong aria-hidden="true">27.</strong> 20130123 - Need some Valgrind for OSX Lion?</a></li><li class="chapter-item expanded "><a href="20130208--1.html"><strong aria-hidden="true">28.</strong> 20130208 - Useless features, part 2</a></li><li class="chapter-item expanded "><a href="20130227--1.html"><strong aria-hidden="true">29.</strong> 20130227 - Time to patch your Flash Player again</a></li><li class="chapter-item expanded "><a href="20130305--1.html"><strong aria-hidden="true">30.</strong> 20130503 - Annoying addons</a></li><li class="chapter-item expanded "><a href="20130325--1.html"><strong aria-hidden="true">31.</strong> 20130325 - iOS most wanted (updated)</a></li><li class="chapter-item expanded "><a href="20130327--1.html"><strong aria-hidden="true">32.</strong> 20130327 - Apple: a developers nightmare</a></li><li class="chapter-item expanded "><a href="20130329--1.html" class="active"><strong aria-hidden="true">33.</strong> 20130329 - Boost libraries on OSX - first contact</a></li><li class="chapter-item expanded "><a href="20130331--1.html"><strong aria-hidden="true">34.</strong> 20130331 - Boost libraries on OSX - first obstacles</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">hardcodes</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#boost-libraries-on-osx---first-contact" id="boost-libraries-on-osx---first-contact">Boost libraries on OSX - first contact</a></h1>
+<p>So here I am, still learning C++ and using the Qt framework. Recently I wanted to know how much disk space is left on a device, so that I can decide if an operation takes place at all.</p>
+<p>Surprisingly there is nothing in the regular Qt framework. There seem to be some leftovers in a part of the mobile framework from the Nokia days. But those are not in the distribution that can be downloaded from the Qt project page.</p>
+<p>After some research in the forum and our friend Mr. Google I stumbled over the Boost libraries (again - it wasn't for the first time). So I went over to their homepage and hit the</p>
+<p><img src="http://www.boost.org/style-v2/css_0/get-boost.png" alt="Image source: http://www.boost.org/style-v2/css_0/get-boost.png" /> button.</p>
+<p>Most parts of the boost libraries are header only, they need no compiling at all. Whut? Yes, they are a bunch of clever templates that do all the work for you. So, download, unzip and there you go (have a look in their <a href=":http://www.boost.org/doc/libs/release/more/getting_started/index.html">getting started guide</a>.</p>
+<p>But I wanted something that works with the filesystem and is platform-independent. That's the part where some compiling comes into place. Part of the download was the <a href="http://www.boost.org/doc/libs/1_53_0/libs/filesystem/doc/index.htm">Boost.Filesystem library</a>. How to compile is described <a href="http://www.boost.org/doc/libs/1_53_0/more/getting_started/unix-variants.html#prepare-to-use-a-boost-library-binary">here</a>.</p>
+<p>So why is he writing all that stuff here if everything is documented on the Boost homepage? Well, that's kind of a self-therapy. By writing down the steps needed, I can memorize them better and if I need the information in future, I know where to find it. Beyond that it's written in my own language using my wording. Basically the same information but it goes faster into my brain. Last but not least there is the fact that you have understood it for yourself when you can tell others how to do it.</p>
+<p>Open you terminal and there you go.</p>
+<p>Make a directory where the Boost libraries go and put the downloaded file there</p>
+<pre><code>export build=~/devtools # or wherever you'd like to build
+mkdir -p $build
+cd $build
+</code></pre>
+<p>I could have put a fancy curl command here but since I wanted that get Boost button in here, I assume that you put the file in there with Finder.</p>
+<pre><code>tar -xzf boost_1_53_0.tar.gz
+</code></pre>
+<p>Go into the new boost_1_53_0 directory and for a first glance enter</p>
+<pre><code>./bootstrap.sh --help
+
+`./bootstrap.sh' prepares Boost for building on a few kinds of systems.
+Usage: ./bootstrap.sh [OPTION]... 
+Defaults for the options are specified in brackets.
+Configuration:
+  -h, --help                display this help and exit
+  --with-bjam=BJAM          use existing Boost.Jam executable (bjam)
+                            [automatically built]
+  --with-toolset=TOOLSET    use specific Boost.Build toolset
+                            [automatically detected]
+  --show-libraries          show the set of libraries that require build
+                            and installation steps (i.e., those libraries
+                            that can be used with --with-libraries or
+                            --without-libraries), then exit
+  --with-libraries=list     build only a particular set of libraries,
+                            describing using either a comma-separated list of
+                            library names or &quot;all&quot;
+                            [all]
+  --without-libraries=list  build all libraries except the ones listed []
+  --with-icu                enable Unicode/ICU support in Regex 
+                            [automatically detected]
+  --without-icu             disable Unicode/ICU support in Regex
+  --with-icu=DIR            specify the root of the ICU library installation
+                            and enable Unicode/ICU support in Regex
+                            [automatically detected]
+  --with-python=PYTHON      specify the Python executable [python]
+  --with-python-root=DIR    specify the root of the Python installation
+                            [automatically detected]
+  --with-python-version=X.Y specify the Python version as X.Y
+                            [automatically detected]
+
+Installation directories:
+  --prefix=PREFIX           install Boost into the given PREFIX
+                            [/usr/local]
+  --exec-prefix=EPREFIX     install Boost binaries into the given EPREFIX
+                            [PREFIX]
+
+More precise control over installation directories:
+  --libdir=DIR              install libraries here [EPREFIX/lib]
+  --includedir=DIR          install headers here [PREFIX/include]
+</code></pre>
+<p>Ok, the option --show-libraries will tell us, what is in stock here.</p>
+<pre><code>./bootstrap.sh --show-libraries
+
+-n Building Boost.Build engine with toolset darwin... 
+tools/build/v2/engine/bin.macosxx86_64/b2
+The following Boost libraries have portions that require a separate build
+and installation step. Any library not listed here can be used by including
+the headers only.
+The Boost libraries requiring separate building and installation are:
+    - atomic
+    - chrono
+    - context
+    - date_time
+    - exception
+    - filesystem
+    - graph
+    - graph_parallel
+    - iostreams
+    - locale
+    - math
+    - mpi
+    - program_options
+    - python
+    - random
+    - regex
+    - serialization
+    - signals
+    - system
+    - test
+    - thread
+    - timer
+    - wave
+</code></pre>
+<p>OK, we wanted something for the filesystem and surprise, surprise: it's called filesystem.</p>
+<p>The option --with-libraries tells that bootstrap script which library to build (if not all and I just want that file thingy). On top of that we can use --prefix to tell where the build library goes in our filesystem. Long story short:</p>
+<pre><code>./bootstrap.sh --prefix=$build/boost_1_53_0/filesystem --with-libraries=filesystem
+-n Building Boost.Build engine with toolset darwin... 
+tools/build/v2/engine/bin.macosxx86_64/b2
+-n Unicode/ICU support for Boost.Regex?... 
+not found.
+Generating Boost.Build configuration in project-config.jam...
+Bootstrapping is done. To build, run:
+    ./b2
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/boost-build2/doc/html/index.html
+</code></pre>
+<p>We will se if the <em>&quot;Unicode/ICU support for Boost.Regex?... not found.&quot;</em> message means anything. Enter</p>
+<pre><code>./b2
+
+Building the Boost C++ Libraries.
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - context                  : not building
+    - date_time                : not building
+    - exception                : not building
+    - filesystem               : building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - signals                  : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - wave                     : not building
+
+...patience...
+...found 507 targets...
+...updating 46 targets...
+common.mkdir stage
+common.mkdir stage/lib
+common.mkdir bin.v2
+common.mkdir bin.v2/libs
+common.mkdir bin.v2/libs/system
+common.mkdir bin.v2/libs/system/build
+common.mkdir bin.v2/libs/system/build/darwin-4.2.1
+common.mkdir bin.v2/libs/system/build/darwin-4.2.1/release
+common.mkdir bin.v2/libs/system/build/darwin-4.2.1/release/threading-multi
+darwin.compile.c++ bin.v2/libs/system/build/darwin-4.2.1/release/threading-multi/error_code.o
+darwin.link.dll bin.v2/libs/system/build/darwin-4.2.1/release/threading-multi/libboost_system.dylib
+common.copy stage/lib/libboost_system.dylib
+common.mkdir bin.v2/libs/filesystem
+common.mkdir bin.v2/libs/filesystem/build
+common.mkdir bin.v2/libs/filesystem/build/darwin-4.2.1
+common.mkdir bin.v2/libs/filesystem/build/darwin-4.2.1/release
+common.mkdir bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/codecvt_error_category.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/operations.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/path_traits.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/portability.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/unique_path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/utf8_codecvt_facet.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/windows_file_codecvt.o
+darwin.link.dll bin.v2/libs/filesystem/build/darwin-4.2.1/release/threading-multi/libboost_filesystem.dylib
+common.copy stage/lib/libboost_filesystem.dylib
+common.mkdir bin.v2/libs/system/build/darwin-4.2.1/release/link-static
+common.mkdir bin.v2/libs/system/build/darwin-4.2.1/release/link-static/threading-multi
+darwin.compile.c++ bin.v2/libs/system/build/darwin-4.2.1/release/link-static/threading-multi/error_code.o
+darwin.archive bin.v2/libs/system/build/darwin-4.2.1/release/link-static/threading-multi/libboost_system.a
+common.copy stage/lib/libboost_system.a
+common.mkdir bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static
+common.mkdir bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/codecvt_error_category.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/operations.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/path_traits.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/portability.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/unique_path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/utf8_codecvt_facet.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/windows_file_codecvt.o
+darwin.archive bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/libboost_filesystem.a
+/usr/bin/libtool: file: bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/windows_file_codecvt.o has no symbols
+common.copy stage/lib/libboost_filesystem.a
+...updated 46 targets...
+
+The Boost C++ Libraries were successfully built!
+The following directory should be added to compiler include paths:
+
+    /Users/sven/devtools/boost_1_53_0
+
+The following directory should be added to linker library paths:
+
+    /Users/sven/devtools/boost_1_53_0/stage/lib
+</code></pre>
+<p>Yes, there you go: it reads The Boost C++ Libraries were successfully built! :-) And there is also the most important hint:</p>
+<blockquote>
+<p><em>The following directory should be added to linker library paths:</em>
+<em>/Users/sven/devtools/boost_1_53_0/stage/lib</em></p>
+</blockquote>
+<p>That is nice! I like it when toolsets are that easy to build and use.
+One step left. I want to use it with Qt/QtCreator, so add that information to the .PRO file</p>
+<pre><code>LIBS += /Users/sven/devtools/boost_1_53_0/stage/lib -lboost_filesystem -lboost_system
+INCLUDEPATH += /Users/sven/devtools/boost_1_53_0
+</code></pre>
+<p>One could think that</p>
+<pre><code>LIBS += /Users/sven/devtools/boost_1_53_0/stage/lib
+INCLUDEPATH += /Users/sven/devtools/boost_1_53_0
+</code></pre>
+<p>is enough, but the compiler complains here (hey, I am still a C++ novice).</p>
+<p><em>Of course you should use your own path here</em>. That was easy and fast. What are you waiting for? Do it for yourself.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="20130327--1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="20130331--1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="20130327--1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="20130331--1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

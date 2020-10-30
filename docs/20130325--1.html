@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>20130325 - iOS most wanted (updated) - hardcodes</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="20120601--1.html"><strong aria-hidden="true">1.</strong> 20120601 - Yes, it's a blog!</a></li><li class="chapter-item expanded "><a href="20120601--3.html"><strong aria-hidden="true">2.</strong> 20120601 - Jumpy on Amiga</a></li><li class="chapter-item expanded "><a href="20120601--2.html"><strong aria-hidden="true">3.</strong> 20120601 - I need space</a></li><li class="chapter-item expanded "><a href="20120619--1.html"><strong aria-hidden="true">4.</strong> 20120619 - No filesystem needed?</a></li><li class="chapter-item expanded "><a href="20120610--1.html"><strong aria-hidden="true">5.</strong> 20120610 - One-way globalization</a></li><li class="chapter-item expanded "><a href="20120603--1.html"><strong aria-hidden="true">6.</strong> 20120603 - ITIL burger anyone?</a></li><li class="chapter-item expanded "><a href="20120620--1.html"><strong aria-hidden="true">7.</strong> 20120620 - Find the button</a></li><li class="chapter-item expanded "><a href="20120621--1.html"><strong aria-hidden="true">8.</strong> 20120621 - How to ask questions</a></li><li class="chapter-item expanded "><a href="20120704--1.html"><strong aria-hidden="true">9.</strong> 20120407 - Back to the Mac</a></li><li class="chapter-item expanded "><a href="20120716--1.html"><strong aria-hidden="true">10.</strong> 20120716 - Trust the cloud</a></li><li class="chapter-item expanded "><a href="20120727--1.html"><strong aria-hidden="true">11.</strong> 20120627 - Change network adapter setting on Windows Server 2008 R2</a></li><li class="chapter-item expanded "><a href="20120813--1.html"><strong aria-hidden="true">12.</strong> 20120813 - Play with Qt</a></li><li class="chapter-item expanded "><a href="20120817--1.html"><strong aria-hidden="true">13.</strong> 20120817 - On to pastures new</a></li><li class="chapter-item expanded "><a href="20120912--1.html"><strong aria-hidden="true">14.</strong> 20120912 - 999 USD</a></li><li class="chapter-item expanded "><a href="20120913--1.html"><strong aria-hidden="true">15.</strong> 20120913 - Apple goes south</a></li><li class="chapter-item expanded "><a href="20120921--1.html"><strong aria-hidden="true">16.</strong> 20120921 - Apple and a..h.l.s</a></li><li class="chapter-item expanded "><a href="20120922--1.html"><strong aria-hidden="true">17.</strong> 20120922 - QuickMinder and iOS6, game over?</a></li><li class="chapter-item expanded "><a href="20120923--1.html"><strong aria-hidden="true">18.</strong> 20120923 - How Apple’s Obsession with Google Is Hurting Apple</a></li><li class="chapter-item expanded "><a href="20120926--1.html"><strong aria-hidden="true">19.</strong> 20120926 - Useless features</a></li><li class="chapter-item expanded "><a href="20121006--1.html"><strong aria-hidden="true">20.</strong> 20121006 - Daily UI hell</a></li><li class="chapter-item expanded "><a href="20121013--1.html"><strong aria-hidden="true">21.</strong> 20121013 - Old habits</a></li><li class="chapter-item expanded "><a href="20121016--1.html"><strong aria-hidden="true">22.</strong> 20121016 - Open with...</a></li><li class="chapter-item expanded "><a href="20121101--1.html"><strong aria-hidden="true">23.</strong> 20121101 - Quickminder</a></li><li class="chapter-item expanded "><a href="20121101--2.html"><strong aria-hidden="true">24.</strong> 20121101 - JumpyRally</a></li><li class="chapter-item expanded "><a href="20130115--1.html"><strong aria-hidden="true">25.</strong> 20130115 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 1</a></li><li class="chapter-item expanded "><a href="20130121--1.html"><strong aria-hidden="true">26.</strong> 20130121 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 2</a></li><li class="chapter-item expanded "><a href="20130123--1.html"><strong aria-hidden="true">27.</strong> 20130123 - Need some Valgrind for OSX Lion?</a></li><li class="chapter-item expanded "><a href="20130208--1.html"><strong aria-hidden="true">28.</strong> 20130208 - Useless features, part 2</a></li><li class="chapter-item expanded "><a href="20130227--1.html"><strong aria-hidden="true">29.</strong> 20130227 - Time to patch your Flash Player again</a></li><li class="chapter-item expanded "><a href="20130305--1.html"><strong aria-hidden="true">30.</strong> 20130503 - Annoying addons</a></li><li class="chapter-item expanded "><a href="20130325--1.html" class="active"><strong aria-hidden="true">31.</strong> 20130325 - iOS most wanted (updated)</a></li><li class="chapter-item expanded "><a href="20130327--1.html"><strong aria-hidden="true">32.</strong> 20130327 - Apple: a developers nightmare</a></li><li class="chapter-item expanded "><a href="20130329--1.html"><strong aria-hidden="true">33.</strong> 20130329 - Boost libraries on OSX - first contact</a></li><li class="chapter-item expanded "><a href="20130331--1.html"><strong aria-hidden="true">34.</strong> 20130331 - Boost libraries on OSX - first obstacles</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">hardcodes</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#ios-most-wanted-updated" id="ios-most-wanted-updated">iOS most wanted (updated)</a></h1>
+<p>Here is my own personal list of features I miss most in the Apple universe:
+<em>just for the record, most of those items here were written while I was still on iOS 5.1</em></p>
+<ul>
+<li>
+<p><em>Date</em> Why the heck don't you display the current date next to the time? Can't be that hard. Yes, there is a calendar app but that's not the point and it's not even 100 % sure that it shows the current day!</p>
+</li>
+<li>
+<p><em>Store wishlists</em> This one goes for every store there is so far: iTunes, Appstore. iTunes U is a separate app now, podcast will become with iOS 6 but under hood they still use iTunes - I guess.
+Sometimes there is something interesting to be found and you are not 100 % sure if you want to buy it. Or maybe in case of a movie you're missing the right company ;-)</p>
+<p>Wouldn't it be nice to drop such items on a wishlist? Look at Amazon. They know the way. By the way: iTunes and Appstore are crap, Apple could learn so much from Amazon there. (It's so hard to find something in iTunes/Appstore even if you have a precise idea of what you are looking for)</p>
+<p>Developers can't even change the keywords or category of an app once it's gone online :-/</p>
+</li>
+<li>
+<p><em>Free trials</em> Developing software is hard work and therefore it is no miracle that developers want to sell their software on the Appstore and not give it away for free. That is totally fine and they should get their money if they did a good job. But here is the problem: how to find out if they did a good job? On the Appstore it's first buy and then...maybe be happy or maybe suffer.</p>
+<p>Often there are light versions for free to be found on the store but these versions are intentionally crippled. Developers must cripple them, they got no other choice. If those versions were feature complete, nobody would buy the &quot;full&quot; version even if the customer is satisfied - they are selfish humans in the end. But a crippled version doesn't necessarily show me how good the full version is.</p>
+<p>Wouldn't it be nice if you could try the full version for - let's say - one week? If you don't like it, it simply should stop working after that period. If you decide to buy then - and only then - you can install it on another device. The user experience should be the same with every app and the user should not be able to bypass it - there you go, it must be implemented on OS level.</p>
+<p>I think that would make both developers and customers very happy.</p>
+<p>Have a look at this article from <a href="http://osxdaily.com/2013/02/26/5-improvements-features-the-ios-app-store-badly-needs/">OSX Daily</a>. I am not alone :-)</p>
+</li>
+<li>
+<p><em>Filesystem</em> Although I can somehow understand the approach Apple took in completely hiding the filesystem, I still <a href="./20120619--1.html">want that feature</a>! Nothing Windows 8 has shown so far makes me really happy or even want to change. But the access to the filesystem could make the difference! <em>Update</em> Have a look at Blackberry 10. They have sandboxed Apps and a way to share data via filesystem.</p>
+<p>Apps like <a href="http://9to5mac.com/2013/02/28/review-files-is-the-finder-for-ios-youve-been-waiting-for/">Files</a> (article on 9to5mac) are not the solution as the developers have to follow (or is obey the better word?) the same restrictions</p>
+</li>
+<li>
+<p><em>Keyboard navigation</em> Writing on a touch device with only visual feedback is pain in itself. If you misspelled something and want to correct it, iOS gets nasty. Your only chance is tapping in the text field, wait 3 seconds and shift the magnifying glass. Oh there is another bug, tap again, wait 3 seconds, adjust the magnifier and so on and so on. Screen real estate is precious, but please: put at least cursor left/right on the keyboard.</p>
+</li>
+<li>
+<p><em>Save as PDF</em> Ever found a website and wanted to print it to a PDF? Me too! PDF support is built in iOS but as Apple decided that there is no need of a filesystem (I keep on repeating) they thought it would not be necessary to save a website content. Yes, I know the concept of bookmarks but the web changes as you may know. If any app that supports opening of PDFs could be targeted with the print output, such a file could be saved to Dropbox or any other cloudy kind of storage.</p>
+</li>
+<li>
+<p><em>AirPlay Mirroring</em> Yeah, there is some AirPlay Mirroring in iOS. But I want mirror any device to any other device, like iPod to iPad, my Mac to my iPad and any other combination that makes sense regarding screen resolution. How many OS generations shall we wait? Money for developers shouldn't be Apple's problem right now.</p>
+</li>
+<li>
+<p><em>Easy data exchange</em> Ever tried to paste the URL of a Youtube video (from the Youtube app) to Facebook? Did you ever try to attach a picture from inside the Mail app? (Or worse: data from another non-Apple-App)</p>
+<p>Then you know what I am talking about.</p>
+</li>
+<li>
+<p><em>SMS on iPad</em> If you have an iPad with 3G network it would be nice to be able to send and receive SMS. It even works with cheap UMTS/WLAN modems, why not with the high prized iPad?
+And for those who say &quot;use mail or messages&quot;: yeah, and what if I need to tweak my dataplan via SMS? There are countries in this world where they got unregistered prepaid SIM cards.</p>
+</li>
+<li>
+<p><em>Close all recently used apps</em> If you press the home button or swipe up with four fingers you get a list of the recently used apps. That's nice if there were only a few in this list but after a while it gets filled up and thus useless. What is a list good for that's more complicated to search in than restarting the app from the &quot;desktop&quot; icon? It ain't real multitasking: the most apps in background don't get a single cpu cycle. Please bring a button to close them all.</p>
+</li>
+<li>
+<p><em>Improved bookmark editing</em> With Safari on a Mac you can (like with any other browser) edit, sort and search your bookmarks using the complete screen real estate. No big problem if you only got a few, but I've got many of them, because Safari completes the URL for me if it's in the bookmarks.</p>
+<p>BTW: why is it not possible to add/edit/use the stored bookmarks on the iCloud website?</p>
+</li>
+<li>
+<p><em>PDF with index</em> Yepp, iOS can show you a PDF file (and I haven't found one that can not be shown, but there will be sure files outside that can't), you can scroll up/down, pinch in/out just fine.
+But it lacks the capability of showing and using the index of the PDF (if it has one).</p>
+<p>What a bummer!</p>
+</li>
+<li>
+<p><em>Better WiFi</em> Compared to my Macs the WiFi is sometimes bumpy and sluggish. Fix that, damn it! And while you are at it: I want to delete entries from &quot;known networks&quot;.</p>
+</li>
+<li>
+<p><em>Bluetooth</em> Bluetooth, you are asking? but my i* has Bluetooth! Yes it has. But only for keyboards and headphones. Ever tried to exchange data with a non-Apple-device? Even more than ten year old phones can do that without problems. It simply works there :-/</p>
+</li>
+<li>
+<p><em>Shuffle playlists</em> &quot;Wait a moment, my iTunes has a shuffle function&quot; you say? Well, yes it does have something that is called shuffle but in my eyes that is the world's worst manifestation of such a thing. Yours truly associates shuffle with random playlists and sorry dear reader: the playlists on iTunes are in no random order at all (if shuffle is activated, of course). And before you mention it, yes I know there isn't such a thing as &quot;chance&quot; from a computerized random generator. So the art is in seeding that thing in such a way that it appears naturally to us humans. But that Apple shuffle algorithm prefers songs you have listened often to and therefore becomes a self-fulfilling prophecy. Songs played in shuffle mode are then preferred to be played in shuffle mode because they have been played more often (in shuffle mode). Hooray, but I want to hear a random selection of all my songs. Even with dynamic playlists and some clever rulesets you can't emulate that.</p>
+<p>By the way and off topic: thanks to Apple you can't even see the order of the shuffled songs.</p>
+<p>Do they even use that software to hear music?</p>
+<p>If you still don't believe me: sync you iPod with you iTunes on your Mac. Start a shuffle play of some playlist on the computer for ten (or even hundred ) songs. Start a shuffle play on your iPod on the same playlist a week (!) or a month (!) later and you will hear exactly the same order of songs. Year, the blinded devotees will call that a feature...</p>
+</li>
+<li>
+<p><strong>Upgraded to 6.1.3</strong></p>
+</li>
+<li>
+<p><em>Sync iTunes U</em> Wouldn't it be nice to have course subscriptions from the iPad to show up in iTunes on your Mac (and vice versa)?</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="20130305--1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="20130327--1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="20130305--1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="20130327--1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
