@@ -1,0 +1,1 @@
+This is the source for my [hardcodes github page](https://hardcodes.github.io).
