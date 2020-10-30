@@ -1,5 +1,6 @@
 # Summary
 
+<<<<<<< HEAD
 - [20120601 - Yes, it's a blog!](./20120601--1.md)
 - [20120601 - Jumpy on Amiga](./20120601--3.md)
 - [20120601 - I need space](./20120601--2.md)
@@ -34,3 +35,10 @@
 - [20130327 - Apple: a developers nightmare](./20130327--1.md)
 - [20130329 - Boost libraries on OSX - first contact](./20130329--1.md)
 - [20130331 - Boost libraries on OSX - first obstacles](./20130331--1.md)
+=======
+- [20120619 - No filesystem needed?](./20120619--1.md)
+- [20120610 - One-way globalization](./20120610--1.md)
+- [20120603 - ITIL burger anyone?](./20120603--1.md)
+- [20120601 - I need space](./2012-06-01--2.md)
+- [20120601 - Yes, it's a blog!](./2012-06-01--1.md)
+>>>>>>> 1cc913f8f77218732676b326a43803d53caa2617
