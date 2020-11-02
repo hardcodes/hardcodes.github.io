@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>20131228 - Jolla wish list - reality check - hardcodes</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="20120601--1.html"><strong aria-hidden="true">1.</strong> 20120601 - Yes, it's a blog!</a></li><li class="chapter-item expanded "><a href="20120601--3.html"><strong aria-hidden="true">2.</strong> 20120601 - Jumpy on Amiga</a></li><li class="chapter-item expanded "><a href="20120601--2.html"><strong aria-hidden="true">3.</strong> 20120601 - I need space</a></li><li class="chapter-item expanded "><a href="20120619--1.html"><strong aria-hidden="true">4.</strong> 20120619 - No filesystem needed?</a></li><li class="chapter-item expanded "><a href="20120610--1.html"><strong aria-hidden="true">5.</strong> 20120610 - One-way globalization</a></li><li class="chapter-item expanded "><a href="20120603--1.html"><strong aria-hidden="true">6.</strong> 20120603 - ITIL burger anyone?</a></li><li class="chapter-item expanded "><a href="20120620--1.html"><strong aria-hidden="true">7.</strong> 20120620 - Find the button</a></li><li class="chapter-item expanded "><a href="20120621--1.html"><strong aria-hidden="true">8.</strong> 20120621 - How to ask questions</a></li><li class="chapter-item expanded "><a href="20120704--1.html"><strong aria-hidden="true">9.</strong> 20120407 - Back to the Mac</a></li><li class="chapter-item expanded "><a href="20120716--1.html"><strong aria-hidden="true">10.</strong> 20120716 - Trust the cloud</a></li><li class="chapter-item expanded "><a href="20120727--1.html"><strong aria-hidden="true">11.</strong> 20120627 - Change network adapter setting on Windows Server 2008 R2</a></li><li class="chapter-item expanded "><a href="20120813--1.html"><strong aria-hidden="true">12.</strong> 20120813 - Play with Qt</a></li><li class="chapter-item expanded "><a href="20120817--1.html"><strong aria-hidden="true">13.</strong> 20120817 - On to pastures new</a></li><li class="chapter-item expanded "><a href="20120912--1.html"><strong aria-hidden="true">14.</strong> 20120912 - 999 USD</a></li><li class="chapter-item expanded "><a href="20120913--1.html"><strong aria-hidden="true">15.</strong> 20120913 - Apple goes south</a></li><li class="chapter-item expanded "><a href="20120921--1.html"><strong aria-hidden="true">16.</strong> 20120921 - Apple and a..h.l.s</a></li><li class="chapter-item expanded "><a href="20120922--1.html"><strong aria-hidden="true">17.</strong> 20120922 - QuickMinder and iOS6, game over?</a></li><li class="chapter-item expanded "><a href="20120923--1.html"><strong aria-hidden="true">18.</strong> 20120923 - How Apple’s Obsession with Google Is Hurting Apple</a></li><li class="chapter-item expanded "><a href="20120926--1.html"><strong aria-hidden="true">19.</strong> 20120926 - Useless features</a></li><li class="chapter-item expanded "><a href="20121006--1.html"><strong aria-hidden="true">20.</strong> 20121006 - Daily UI hell</a></li><li class="chapter-item expanded "><a href="20121013--1.html"><strong aria-hidden="true">21.</strong> 20121013 - Old habits</a></li><li class="chapter-item expanded "><a href="20121016--1.html"><strong aria-hidden="true">22.</strong> 20121016 - Open with...</a></li><li class="chapter-item expanded "><a href="20121101--1.html"><strong aria-hidden="true">23.</strong> 20121101 - Quickminder</a></li><li class="chapter-item expanded "><a href="20121101--2.html"><strong aria-hidden="true">24.</strong> 20121101 - JumpyRally</a></li><li class="chapter-item expanded "><a href="20130115--1.html"><strong aria-hidden="true">25.</strong> 20130115 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 1</a></li><li class="chapter-item expanded "><a href="20130121--1.html"><strong aria-hidden="true">26.</strong> 20130121 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 2</a></li><li class="chapter-item expanded "><a href="20130123--1.html"><strong aria-hidden="true">27.</strong> 20130123 - Need some Valgrind for OSX Lion?</a></li><li class="chapter-item expanded "><a href="20130208--1.html"><strong aria-hidden="true">28.</strong> 20130208 - Useless features, part 2</a></li><li class="chapter-item expanded "><a href="20130227--1.html"><strong aria-hidden="true">29.</strong> 20130227 - Time to patch your Flash Player again</a></li><li class="chapter-item expanded "><a href="20130305--1.html"><strong aria-hidden="true">30.</strong> 20130503 - Annoying addons</a></li><li class="chapter-item expanded "><a href="20130325--1.html"><strong aria-hidden="true">31.</strong> 20130325 - iOS most wanted (updated)</a></li><li class="chapter-item expanded "><a href="20130327--1.html"><strong aria-hidden="true">32.</strong> 20130327 - Apple: a developers nightmare</a></li><li class="chapter-item expanded "><a href="20130329--1.html"><strong aria-hidden="true">33.</strong> 20130329 - Boost libraries on OSX - first contact</a></li><li class="chapter-item expanded "><a href="20130331--1.html"><strong aria-hidden="true">34.</strong> 20130331 - Boost libraries on OSX - first obstacles</a></li><li class="chapter-item expanded "><a href="20130414--1.html"><strong aria-hidden="true">35.</strong> 20130414 - Pimp the clean process in QtCreator</a></li><li class="chapter-item expanded "><a href="20130415--1.html"><strong aria-hidden="true">36.</strong> 20130415 - Handling the program version with Qt, part 1</a></li><li class="chapter-item expanded "><a href="20130415--2.html"><strong aria-hidden="true">37.</strong> 20130415 - Handling the program version with Qt, part 2</a></li><li class="chapter-item expanded "><a href="20130418--1.html"><strong aria-hidden="true">38.</strong> 20130418 - Boost libraries on OSX - obstacles almost gone</a></li><li class="chapter-item expanded "><a href="20130421--1.html"><strong aria-hidden="true">39.</strong> 20130421 - Using the Boost libraries with QtCreator on OSX</a></li><li class="chapter-item expanded "><a href="20130423--1.html"><strong aria-hidden="true">40.</strong> 20130423 - Boost libraries and QtCreator on OSX - all together now</a></li><li class="chapter-item expanded "><a href="20130520--1.html"><strong aria-hidden="true">41.</strong> 20130520 - Welcome aboard sailor!</a></li><li class="chapter-item expanded "><a href="20130527--1.html"><strong aria-hidden="true">42.</strong> 20130527 - Why I believe in Jolla</a></li><li class="chapter-item expanded "><a href="20130602--1.html"><strong aria-hidden="true">43.</strong> 20130602 - Boost up again</a></li><li class="chapter-item expanded "><a href="20130610--1.html"><strong aria-hidden="true">44.</strong> 20130610 - Powershell - get Active Directory User accounts with no employee number set</a></li><li class="chapter-item expanded "><a href="20130618--1.html"><strong aria-hidden="true">45.</strong> 20130618 - Inside the belly of the beast</a></li><li class="chapter-item expanded "><a href="20130620--1.html"><strong aria-hidden="true">46.</strong> 20130620 - Cloning the Qt git repository into a corporate environment</a></li><li class="chapter-item expanded "><a href="20130625--1.html"><strong aria-hidden="true">47.</strong> 20130625 - Howto Git?!</a></li><li class="chapter-item expanded "><a href="20130707--1.html"><strong aria-hidden="true">48.</strong> 20130707 - Timemachine and encrypted volumes - no paste possible - data save as in a vault</a></li><li class="chapter-item expanded "><a href="20130809--1.html"><strong aria-hidden="true">49.</strong> 20130809 - Howto setup a pseudo-remote Qt project</a></li><li class="chapter-item expanded "><a href="20130809--2.html"><strong aria-hidden="true">50.</strong> 20130809 - #Snowden, #NSA, #cloud, #surveillance, #escape</a></li><li class="chapter-item expanded "><a href="20130822--1.html"><strong aria-hidden="true">51.</strong> 20130822 - OSX Mountain Lion - screensaver can not show your iPhoto library anymore</a></li><li class="chapter-item expanded "><a href="20130910--1.html"><strong aria-hidden="true">52.</strong> 20130910 - Windows7 icon cache corrupt</a></li><li class="chapter-item expanded "><a href="20130924--1.html"><strong aria-hidden="true">53.</strong> 20130924 - Poor man's surveillance system with Raspberry Pi</a></li><li class="chapter-item expanded "><a href="20131016--1.html"><strong aria-hidden="true">54.</strong> 20131016 - Writing your own nslookup in C++</a></li><li class="chapter-item expanded "><a href="20131019--1.html"><strong aria-hidden="true">55.</strong> 20131019 - Building clang-format and friends on OSX Mountain Lion</a></li><li class="chapter-item expanded "><a href="20131019--2.html"><strong aria-hidden="true">56.</strong> 20131019 - Use clang-format with QtCreator</a></li><li class="chapter-item expanded "><a href="20131020--1.html"><strong aria-hidden="true">57.</strong> 20131020 - Raspberry Pi crashes AKA &quot;journal commit I/O error&quot;</a></li><li class="chapter-item expanded "><a href="20131024--1.html"><strong aria-hidden="true">58.</strong> 20131024 - Jolla / SailfishOS wishlist (updated)</a></li><li class="chapter-item expanded "><a href="20131112--1.html"><strong aria-hidden="true">59.</strong> 20131112 - State Machines - Meeting C++ 2013 aftermath 1</a></li><li class="chapter-item expanded "><a href="20131115--1.html"><strong aria-hidden="true">60.</strong> 20131115 - Shameless Plug</a></li><li class="chapter-item expanded "><a href="20131217--1.html"><strong aria-hidden="true">61.</strong> 20131207 - Developing with SailfishOS - a short introduction</a></li><li class="chapter-item expanded "><a href="20131228--1.html" class="active"><strong aria-hidden="true">62.</strong> 20131228 - Jolla wish list - reality check</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">hardcodes</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#jolla-wish-list---reality-check" id="jolla-wish-list---reality-check">Jolla wish list - reality check</a></h1>
+<p>Some time ago, <a href="./20131024--1.html">I wrote about my wishes for the upcoming Jolla device</a>. Now that phone is on the market and has finally arrived at my home. Time to check what's in store. The original text is  written in <em>italic</em>, normal text is the updated content. </p>
+<p><em>Battery</em></p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<i>for me a long lasting battery would make a really smart phone. You started with a full battery in the morning and need a power supply at 5pm? Not smart! I’m not quite sure that they can achieve the extraordinary here but hey, let me dream my dreams. One week would be great and everything more would be (and I rarely use this word) awesome.</i>
+when the TOH bug is fixed, I get something about 2,5 days out of that phone. Of course the theoretical data reads better, but I tend to use a phone and not leave it in pure stand by. Could be better but isn't bad either. If there will be an <em>other half</em> with <a href="http://talk.maemo.org/showthread.php?p=1397595#post1397595">wireless charging</a> I won't care anymore. ~As long as I don't go on a longer trip far from power outlets~</li>
+</ul>
+<p><em>Openness</em></p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Every owner of a phone (or any hardware) should be able to with it what he wants. If I want to write software for that thing, it must be possible without any fees, payments or artificial hoops to jump through.</i>
+check!</li>
+<li><input disabled="" type="checkbox"/>
+<i>No limits for developers, which means: a developer should be able to use each and every resource of that phone. That collides with security but I think that can be managed to a certain degree.</i> Not 100% sure yet, but close to check!</li>
+<li><input disabled="" type="checkbox"/>
+<i>Secure way to opt in for all kinds of access levels to the device (see security).</i> So far a check! But that might change in future.</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Open Source compatible shop / license model(s).</i> check!</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Filesystem access. If you want to be productive, you can't live in an app-centric ecosystem. You often have data, that is used from different apps. There needs to be some common file space where all apps can share data. Blackberry did that and even Microsoft. Again, developers should actively opt in for it.</i> You can access the filesystem and there are already free 3rd party apps to support the user doing so. check!</li>
+<li><input disabled="" type="checkbox"/>
+<i>External storage. If I want to connect a USB flashdrive, harddrive or whatever, it simply should be possible, it is my device. But it should be consistent in use: many Android phones mount external devices in different paths: a usability nightmare.</i> dunno</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Micro SD card slot (maybe in #theotherhalf)</i> No, it's in the body of the phone, just behind the other half. <i>Class10 capable of course or even better: UHS-II</i> check! But I don't know the max. supported standard.</li>
+<li><input disabled="" type="checkbox"/>
+<i>Network printers from any manufacturers should be accessible.</i> nope</li>
+<li><input disabled="" type="checkbox"/>
+<i>PDF export from any document.</i> nope</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>shell (bash or whatever) access (see security) and therefore <em>ssh</em>, <em>scp</em> and all that stuff.</i> check!</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>possible shop alternatives without rooting the device.</i> check!</li>
+<li><input disabled="" type="checkbox"/>
+</i>Bluetooth in every possible aspect.</i> There is bluetooth support of course but not in every aspect - so nope, not yet?</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Regular security updates, should be no problem in a Linux RPM packaged environment</i> check!</li>
+<li><i>Predictable product lifecycle. Oh boy, I hate it when a product gets artificially crippled (can you say Apple?), just to sell the next generation. If people are happy with a product they will come again, no force needed.</i> Only time will tell.</li>
+</ul>
+<p><em>Connectivity</em></p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>OpenVPN.</i> partially, install from developer mode, GUI missing.</li>
+<li><input disabled="" type="checkbox"/>
+<i>syncml support. Wouldn't it be great to sync your address book and calendar with non-cloudy classic applications?</i> nope.</li>
+<li><input disabled="" type="checkbox"/>
+<i>Cross platform cross browser bookmark sync.</i> nope!</li>
+<li><input disabled="" type="checkbox"/>
+<i>Cross platform address book sync.</i> nope, not yet?</li>
+<li><input disabled="" type="checkbox"/>
+<i>Cross platform calendar sync.</i> nope, not yet?</li>
+<li><input disabled="" type="checkbox"/>
+<i>iCal</i> nope, not yet? Seems to be on the <a href="https://together.jolla.com/question/534/support-for-caldav-based-calendars-eg-google-calendar/">roadmap now</a>.</li>
+<li><input disabled="" type="checkbox"/>
+<i>CalDav</i> nope, not yet? Seems to be on the <a href="https://together.jolla.com/question/534/support-for-caldav-based-calendars-eg-google-calendar/">roadmap now</a>.</li>
+</ul>
+<p><em>Security</em></p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<i>PGP mail</i> nope, being discussed at the developer mailing list.</li>
+<li><input disabled="" type="checkbox"/>
+<i>Mr. and Mrs. Average need a secure phone. If you want many customers, you simply can't lean back and babble something from Linux and command line freedom. If a geek can do with that thingy what he wants, that is OK, because he certainly knows what the consequences are. But a regular user does not care, does not want to care and to be honest: why must or should he? So we need a <em>sandbox</em>. Yes, your eyes are alright. Most apps would do pretty fine inside a sandbox so why give up the security that comes along with it? But I claimed that I want an open phone, so every developer should be able to configure his app for a wider or deeper access. And if he does so, that should be clearly visible in the Shop. This way you have at least a chance to think about the entitlements, an application asks for. A calendar app that needs to install Kernel modules is kind of suspicious.</i> nope. At least to in the way I intended. But that does not mean that it is a insecure phone. There is an interesting discussion going on <a href="https://together.jolla.com/question/9670/api-security-model/">together.jolla.com</a>.</li>
+<li><input disabled="" type="checkbox"/>
+<i>Secure Shop. Customers need at least one trustworthy shop where they can buy their apps. This is a big challenge because it binds resources. And it ain't 100% secure. Just look at Apples Appstore. How many apps had tethering inside so far?</i> So mar there are only free apps in the store. They are mostly open source but they could be closed source. So in theory there could be bogus apps in the store. But if you think about it: where is the difference to any other kind of online store or download location? Or even the operating system. At some point you just have to trust them.</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Easy backup of all the data on the device</i> check!</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>No enforcing of <em>the</em> cloud</i> check!</li>
+</ul>
+<p><em>Usability</em></p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<i>sophisticated on screen keyboard. Provide some virtual cursor keys, so that a user can easily place the cursor. Fumbling with a magnifier is a no-go.</i> Nope, that one could be better, IMHO.</li>
+<li><input disabled="" type="checkbox"/>
+<i>A nice way to organize browser bookmarks - maybe that's a good idea for an extra app.</i> Nope, not yet?</li>
+<li><i>A shop system where you can actually find something. Should be easy? Reality shows that it's not (so far).</i> There are not enough apps yet to answer that question.</li>
+<li><input disabled="" type="checkbox"/>
+<i>A shop system where you can try before you buy.</i> nope, but you must not pay so far :-D</li>
+</ul>
+<p><em>Apps</em></p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>Dropbox integration.</i> check!</li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>KeePass client.</i> Yes, Ownkeepass in the app store.</li>
+<li><input disabled="" type="checkbox"/>
+<i>BTSync</i> No client yet. You could install the ARM binary from developer mode but that would run the whole time, IMHO not fitting for a smart phone.
+<i>Those two are the most important ones for me. Dropbox is cloud enough (well, after knowing about the NSA I am not so sure about that one), KeePass is simply crucial!</i></li>
+<li><input disabled="" type="checkbox" checked=""/>
+<i>IRC chat</i> There is a native IRC client in the app store.</li>
+</ul>
+<p>The software is still marked as Beta and that's okay. Jolla lacks of resources (as in manpower) and thus will not provide solutions for the missing bits and pieces in short time (if at all, it's my wish list). But they have provided 3 (sic!) OS updates in one month, even during the christmas holidays when running with a reduced staff.
+To make it clear: this is a great and usable phone! It just needs some polish to bring shine to the diamond!</p>
+<p>P.S.: If I write <em>he</em>, <em>she</em> is also included ;-) </p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="20131217--1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="20131217--1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

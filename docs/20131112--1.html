@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>20131112 - State Machines - Meeting C++ 2013 aftermath 1 - hardcodes</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="20120601--1.html"><strong aria-hidden="true">1.</strong> 20120601 - Yes, it's a blog!</a></li><li class="chapter-item expanded "><a href="20120601--3.html"><strong aria-hidden="true">2.</strong> 20120601 - Jumpy on Amiga</a></li><li class="chapter-item expanded "><a href="20120601--2.html"><strong aria-hidden="true">3.</strong> 20120601 - I need space</a></li><li class="chapter-item expanded "><a href="20120619--1.html"><strong aria-hidden="true">4.</strong> 20120619 - No filesystem needed?</a></li><li class="chapter-item expanded "><a href="20120610--1.html"><strong aria-hidden="true">5.</strong> 20120610 - One-way globalization</a></li><li class="chapter-item expanded "><a href="20120603--1.html"><strong aria-hidden="true">6.</strong> 20120603 - ITIL burger anyone?</a></li><li class="chapter-item expanded "><a href="20120620--1.html"><strong aria-hidden="true">7.</strong> 20120620 - Find the button</a></li><li class="chapter-item expanded "><a href="20120621--1.html"><strong aria-hidden="true">8.</strong> 20120621 - How to ask questions</a></li><li class="chapter-item expanded "><a href="20120704--1.html"><strong aria-hidden="true">9.</strong> 20120407 - Back to the Mac</a></li><li class="chapter-item expanded "><a href="20120716--1.html"><strong aria-hidden="true">10.</strong> 20120716 - Trust the cloud</a></li><li class="chapter-item expanded "><a href="20120727--1.html"><strong aria-hidden="true">11.</strong> 20120627 - Change network adapter setting on Windows Server 2008 R2</a></li><li class="chapter-item expanded "><a href="20120813--1.html"><strong aria-hidden="true">12.</strong> 20120813 - Play with Qt</a></li><li class="chapter-item expanded "><a href="20120817--1.html"><strong aria-hidden="true">13.</strong> 20120817 - On to pastures new</a></li><li class="chapter-item expanded "><a href="20120912--1.html"><strong aria-hidden="true">14.</strong> 20120912 - 999 USD</a></li><li class="chapter-item expanded "><a href="20120913--1.html"><strong aria-hidden="true">15.</strong> 20120913 - Apple goes south</a></li><li class="chapter-item expanded "><a href="20120921--1.html"><strong aria-hidden="true">16.</strong> 20120921 - Apple and a..h.l.s</a></li><li class="chapter-item expanded "><a href="20120922--1.html"><strong aria-hidden="true">17.</strong> 20120922 - QuickMinder and iOS6, game over?</a></li><li class="chapter-item expanded "><a href="20120923--1.html"><strong aria-hidden="true">18.</strong> 20120923 - How Apple’s Obsession with Google Is Hurting Apple</a></li><li class="chapter-item expanded "><a href="20120926--1.html"><strong aria-hidden="true">19.</strong> 20120926 - Useless features</a></li><li class="chapter-item expanded "><a href="20121006--1.html"><strong aria-hidden="true">20.</strong> 20121006 - Daily UI hell</a></li><li class="chapter-item expanded "><a href="20121013--1.html"><strong aria-hidden="true">21.</strong> 20121013 - Old habits</a></li><li class="chapter-item expanded "><a href="20121016--1.html"><strong aria-hidden="true">22.</strong> 20121016 - Open with...</a></li><li class="chapter-item expanded "><a href="20121101--1.html"><strong aria-hidden="true">23.</strong> 20121101 - Quickminder</a></li><li class="chapter-item expanded "><a href="20121101--2.html"><strong aria-hidden="true">24.</strong> 20121101 - JumpyRally</a></li><li class="chapter-item expanded "><a href="20130115--1.html"><strong aria-hidden="true">25.</strong> 20130115 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 1</a></li><li class="chapter-item expanded "><a href="20130121--1.html"><strong aria-hidden="true">26.</strong> 20130121 - NOTE: a missing vtable usually means the first non-inline virtual member function has no definition. Part 2</a></li><li class="chapter-item expanded "><a href="20130123--1.html"><strong aria-hidden="true">27.</strong> 20130123 - Need some Valgrind for OSX Lion?</a></li><li class="chapter-item expanded "><a href="20130208--1.html"><strong aria-hidden="true">28.</strong> 20130208 - Useless features, part 2</a></li><li class="chapter-item expanded "><a href="20130227--1.html"><strong aria-hidden="true">29.</strong> 20130227 - Time to patch your Flash Player again</a></li><li class="chapter-item expanded "><a href="20130305--1.html"><strong aria-hidden="true">30.</strong> 20130503 - Annoying addons</a></li><li class="chapter-item expanded "><a href="20130325--1.html"><strong aria-hidden="true">31.</strong> 20130325 - iOS most wanted (updated)</a></li><li class="chapter-item expanded "><a href="20130327--1.html"><strong aria-hidden="true">32.</strong> 20130327 - Apple: a developers nightmare</a></li><li class="chapter-item expanded "><a href="20130329--1.html"><strong aria-hidden="true">33.</strong> 20130329 - Boost libraries on OSX - first contact</a></li><li class="chapter-item expanded "><a href="20130331--1.html"><strong aria-hidden="true">34.</strong> 20130331 - Boost libraries on OSX - first obstacles</a></li><li class="chapter-item expanded "><a href="20130414--1.html"><strong aria-hidden="true">35.</strong> 20130414 - Pimp the clean process in QtCreator</a></li><li class="chapter-item expanded "><a href="20130415--1.html"><strong aria-hidden="true">36.</strong> 20130415 - Handling the program version with Qt, part 1</a></li><li class="chapter-item expanded "><a href="20130415--2.html"><strong aria-hidden="true">37.</strong> 20130415 - Handling the program version with Qt, part 2</a></li><li class="chapter-item expanded "><a href="20130418--1.html"><strong aria-hidden="true">38.</strong> 20130418 - Boost libraries on OSX - obstacles almost gone</a></li><li class="chapter-item expanded "><a href="20130421--1.html"><strong aria-hidden="true">39.</strong> 20130421 - Using the Boost libraries with QtCreator on OSX</a></li><li class="chapter-item expanded "><a href="20130423--1.html"><strong aria-hidden="true">40.</strong> 20130423 - Boost libraries and QtCreator on OSX - all together now</a></li><li class="chapter-item expanded "><a href="20130520--1.html"><strong aria-hidden="true">41.</strong> 20130520 - Welcome aboard sailor!</a></li><li class="chapter-item expanded "><a href="20130527--1.html"><strong aria-hidden="true">42.</strong> 20130527 - Why I believe in Jolla</a></li><li class="chapter-item expanded "><a href="20130602--1.html"><strong aria-hidden="true">43.</strong> 20130602 - Boost up again</a></li><li class="chapter-item expanded "><a href="20130610--1.html"><strong aria-hidden="true">44.</strong> 20130610 - Powershell - get Active Directory User accounts with no employee number set</a></li><li class="chapter-item expanded "><a href="20130618--1.html"><strong aria-hidden="true">45.</strong> 20130618 - Inside the belly of the beast</a></li><li class="chapter-item expanded "><a href="20130620--1.html"><strong aria-hidden="true">46.</strong> 20130620 - Cloning the Qt git repository into a corporate environment</a></li><li class="chapter-item expanded "><a href="20130625--1.html"><strong aria-hidden="true">47.</strong> 20130625 - Howto Git?!</a></li><li class="chapter-item expanded "><a href="20130707--1.html"><strong aria-hidden="true">48.</strong> 20130707 - Timemachine and encrypted volumes - no paste possible - data save as in a vault</a></li><li class="chapter-item expanded "><a href="20130809--1.html"><strong aria-hidden="true">49.</strong> 20130809 - Howto setup a pseudo-remote Qt project</a></li><li class="chapter-item expanded "><a href="20130809--2.html"><strong aria-hidden="true">50.</strong> 20130809 - #Snowden, #NSA, #cloud, #surveillance, #escape</a></li><li class="chapter-item expanded "><a href="20130822--1.html"><strong aria-hidden="true">51.</strong> 20130822 - OSX Mountain Lion - screensaver can not show your iPhoto library anymore</a></li><li class="chapter-item expanded "><a href="20130910--1.html"><strong aria-hidden="true">52.</strong> 20130910 - Windows7 icon cache corrupt</a></li><li class="chapter-item expanded "><a href="20130924--1.html"><strong aria-hidden="true">53.</strong> 20130924 - Poor man's surveillance system with Raspberry Pi</a></li><li class="chapter-item expanded "><a href="20131016--1.html"><strong aria-hidden="true">54.</strong> 20131016 - Writing your own nslookup in C++</a></li><li class="chapter-item expanded "><a href="20131019--1.html"><strong aria-hidden="true">55.</strong> 20131019 - Building clang-format and friends on OSX Mountain Lion</a></li><li class="chapter-item expanded "><a href="20131019--2.html"><strong aria-hidden="true">56.</strong> 20131019 - Use clang-format with QtCreator</a></li><li class="chapter-item expanded "><a href="20131020--1.html"><strong aria-hidden="true">57.</strong> 20131020 - Raspberry Pi crashes AKA &quot;journal commit I/O error&quot;</a></li><li class="chapter-item expanded "><a href="20131024--1.html"><strong aria-hidden="true">58.</strong> 20131024 - Jolla / SailfishOS wishlist (updated)</a></li><li class="chapter-item expanded "><a href="20131112--1.html" class="active"><strong aria-hidden="true">59.</strong> 20131112 - State Machines - Meeting C++ 2013 aftermath 1</a></li><li class="chapter-item expanded "><a href="20131115--1.html"><strong aria-hidden="true">60.</strong> 20131115 - Shameless Plug</a></li><li class="chapter-item expanded "><a href="20131217--1.html"><strong aria-hidden="true">61.</strong> 20131207 - Developing with SailfishOS - a short introduction</a></li><li class="chapter-item expanded "><a href="20131228--1.html"><strong aria-hidden="true">62.</strong> 20131228 - Jolla wish list - reality check</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">hardcodes</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#state-machines---meeting-c-2013-aftermath-1" id="state-machines---meeting-c-2013-aftermath-1">State Machines - Meeting C++ 2013 aftermath 1</a></h1>
+<p>At this years Qt Developer Days in Berlin there was a talk that mentioned <a href="http://qt-project.org/doc/qt-4.8/statemachine-api.html">The State Machine Framework</a> from Qt but I didn't have the time to look into it. I just put it onto my never ending <em>to do</em> list.</p>
+<p>I was fortunate enough to also attend <a href="http://meetingcpp.de/index.php/mcpp2013.html">Meeting C++ 2013</a> in Düsseldorf and watched <a href="http://meetingcpp.de/index.php/speakerview13/items/19.html">Christophe Henry's</a> talk about <a href="http://meetingcpp.de/index.php/talkview13/items/17.html">Asynchronous programming using the Boost Meta State Machine library</a>. In the beginning of the talk Christophe gave a little overview of what a state machine basically is. I don't remember him mentioning the name but it looked like <a href="http://www.wisdom.weizmann.ac.il/%7Edharel/SCANNED.PAPERS/Statecharts.pdf">Harel's Statecharts</a> also referenced from the Qt documentation.</p>
+<p>The first thing that came to my mind was: <em>this can fundamentally change the way I code!.</em></p>
+<p>Raise your hand if you never ended up in some kind of spaghetti code when GUI programming was involved and the transitions from one state into the other (funny, I even used to have the same kind of wording) were stored in a myriad of bool variables. I must confess of having done that.</p>
+<p>For some time now I was pondering about a way to organize multi platform code. More or less clear was the idea of putting the <em>business logic</em> into a library. This sounds quite easy in theory but providing a clean interface between your <em>data</em>, the <em>logic</em> and the <em>GUI</em> (= outside world) was not.
+Well, here we are, <em>state machine</em> to the rescue.</p>
+<p>What I really liked about Christophe's talk and the boost library was the way the code was organized and being the documentation at the same time. Even someone without a programming background could actually read this! (Stripped of all the comments that is. I am really sure that <a href="http://meetingcpp.de/index.php/speakerview13/items/11.html">Peter Sommerlad</a> would have called them &quot;<em>verboten!&quot;</em>)</p>
+<p>But then I remembered the earlier talk in Berlin where the Qt state machine was mentioned. What's the difference about the implementations? Which one would better suit my needs?</p>
+<p>Reading the Qt documentation I came the conclusion that it is really hard wired to the Qt objects, signals and slots and so on. Not exactly what I had in mind and besides that, it's ugly (sorry):</p>
+<pre><code>//QStateMachine machine;
+     QState *s1 = new QState();
+     QState *s2 = new QState();
+     QState *s3 = new QState();
+//Then, we create the transitions by using the QState::addTransition() function:
+     s1-&gt;addTransition(button, SIGNAL(clicked()), s2);
+     s2-&gt;addTransition(button, SIGNAL(clicked()), s3);
+     s3-&gt;addTransition(button, SIGNAL(clicked()), s1);
+//Next, we add the states to the machine and set the machine's initial state:
+     machine.addState(s1);
+     machine.addState(s2);
+     machine.addState(s3);
+     machine.setInitialState(s1);
+//Finally, we start the state machine:
+     machine.start();
+</code></pre>
+<p>In the introduction of the <a href="http://www.boost.org/doc/libs/1_54_0/libs/msm/">Boost Meta State Machine</a> there is a list of <em>snags</em> of common state machine libraries, here is one example of how they might look:</p>
+<pre><code>state s1 = new State; // a state
+state s2 = new State; // another state
+event e = new Event; // event
+s1-&gt;addTransition(e,s2); // transition s1 -&gt; s2
+</code></pre>
+<p>Looks familiar?</p>
+<p>So in the next few days I will give the <a href="http://www.boost.org/doc/libs/1_54_0/libs/msm/doc/HTML/index.html">boost library</a> a chance. There is even a complete PDF inside the <em>doc</em> folder in the library source code folder. Good for offline reading on the train.</p>
+<p><em>That's the way I like it…aha…aha</em></p>
+<p><a href="http://meetingcpp.de/index.php/speakerview13/items/25.html">Tony van Eerd</a> gave a quite longish but diverse and very interesting keynote at <a href="http://meetingcpp.de/index.php/mcpp2013.html">Meeting C++ 2013</a> and besides many, many interesting topics he showed an image of a video game console (the brand doesn't really matter here) and talked about how the gamepad was the pure manifestation of a controller in the context of <a href="http://de.wikipedia.org/wiki/Model_View_Controller">Model View Controller</a>. The buttons on the gamepad are nothing more and nothing less: just buttons that don't know anything about the outside world. Not even their own status, they just tell a status change to the outside world.</p>
+<p>I'm just catching a glimpse of an idea of how to organize GUI/code/programming in future. It may seem in a way more complicated than the classic approach but in the end it will pay off.</p>
+<p>A big <em>thank you</em> goes out to all the people involved in changing my way of thinking!</p>
+<p><strong>Update</strong></p>
+<p>On Jolla phone the boost libraries are currently not available. Seems that I have to look into the Qt state machine as well.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="20131024--1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="20131115--1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="20131024--1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="20131115--1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
