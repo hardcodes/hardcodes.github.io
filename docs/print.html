@@ -1784,7 +1784,7 @@ To make it clear: this is a great and usable phone! It just needs some polish to
 <p>You find the example on <a href="https://github.com/hardcodes/SFOSHelloWorldWithLibrary_01">Github</a>.</p>
 <p>AFAIK you should use the <code>SUBDIRS</code> template in project files to create projects that depend on self build libraries or other projects to be more generic. But so far I was not able to deploy them with the SailfishOS SDK.</p>
 <p><em>As of now this is just a workaround (IMHO)</em>.</p>
-<h1><a class="header" href="#20140118---sailfishos---whats-pkg-config" id="20140118---sailfishos---whats-pkg-config">20140118 - SailfishOS - what's pkg-config?</a></h1>
+<h1><a class="header" href="#sailfishos---whats-pkg-config" id="sailfishos---whats-pkg-config">SailfishOS - what's pkg-config?</a></h1>
 <p>ou started developing for the Jolla phone, downloaded the <a href="https://sailfishos.org">SailfoshOS SDK</a> and started coding. After a while you stumble upon <code>pkg-config</code>. What's that?</p>
 <p>bq. <code>pkg-config</code> is a helper tool used when compiling applications and libraries. It helps you insert the correct compiler options on the command line so an application can use <code>gcc -o test test.cpkg-config --libs --cflags glib-2.0</code> for instance, rather than hard-coding values on where to find glib (or other libraries). It is language-agnostic, so it can be used for defining the location of documentation tools, for instance.
 Cited from <a href="http://www.freedesktop.org/wiki/Software/pkg-config/">freedesktop.org</a>.</p>
@@ -2008,21 +2008,6 @@ if (first5 != v.end()){                                      // Line2
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
