@@ -1419,7 +1419,7 @@ Well, then - start it afterwards :-)</p>
 <p>So I wanted an IP camera, a Raspberry PI was already at home. It could simply be extended to use wireless LAN and there is a camera module available.
 <em>ding</em> <em>ding</em> <em>ding</em>
 It's project time :-)</p>
-<p>Instead of a infrared motion sensor or even a fancy <em>is there a movement in the picture</em> algorithm I decided to go vintage. Using a reed switch it is quite easy to check if a door or window has been opened. The Raspberry Pi has a &quot;GPIO interface&quot;:http://elinux.org/RPi_Low-level_peripherals, connecting an external switch to the little computer is almost foolproof.
+<p>Instead of a infrared motion sensor or even a fancy <em>is there a movement in the picture</em> algorithm I decided to go vintage. Using a reed switch it is quite easy to check if a door or window has been opened. The Raspberry Pi has a <a href="http://elinux.org/RPi_Low-level_peripherals">GPIO interface</a>, connecting an external switch to the little computer is almost foolproof.
 You just need a pull-up resistor and you are ready to go.</p>
 <p><img src="http://elinux.org/images/4/49/Input_button.png" alt="Image source: http://elinux.org/images/4/49/Input_button.png" /></p>
 <p><img src="./gfx/58.jpg" alt="" /></p>
@@ -1431,7 +1431,7 @@ You just need a pull-up resistor and you are ready to go.</p>
 <p>The outcome is <a href="https://github.com/hardcodes/gpioObserver.git">gpioObserver</a></p>
 <p>When started on the command line it waits for a given GPIO pin to change its status to the desired one and then call an external program, e.g. <a href="http://www.raspberrypi.org/camera">raspivid</a>.</p>
 <p>For reading the status of a GPIO pin you must be <code>root</code>, <code>sudo</code> as user <code>pi</code> or edit <code>/etc/sudoers</code> with <code>visudo</code> in such a way that you can <code>sudo gpioOberserver</code> from a regular Linux user.</p>
-<p>To get started, install the <a href="http://qt-project.org/wiki/apt-get_Qt4_on_the_Raspberry_Pi">Qt environment on your Debian Wheezy Image</a>, download the code from &quot;Github&quot;:https://github.com/hardcodes/gpioObserver.git and compile.</p>
+<p>To get started, install the <a href="http://qt-project.org/wiki/apt-get_Qt4_on_the_Raspberry_Pi">Qt environment on your Debian Wheezy Image</a>, download the code from <a href="https://github.com/hardcodes/gpioObserver.git">Github</a> and compile.</p>
 <pre><code>$ git clone https://github.com/hardcodes/gpioObserver.git
 </code></pre>
 <p>Compile with</p>
@@ -1440,7 +1440,7 @@ $ make
 $ sudo make install
 </code></pre>
 <p>The executable will be installed as <code>/user/local/bin/gpioObserver</code>. You can <code>sudo</code> it as user <code>pi</code> or add a new user and work on <code>/etc/sudoers</code> if you want that task separated.</p>
-<p><code>gpioObserver</code> waits for a signal change from <code>0</code> to <code>1</code> and then starts a [batch script9(https://github.com/hardcodes/doorAction.sh.git) that mounts a drive on a NAS system, records a videofile with <code>raspivid</code> and unmounts the drive again. Start <code>gpioObserver</code> from <code>crontab</code>, e.g. like</p>
+<p><code>gpioObserver</code> waits for a signal change from <code>0</code> to <code>1</code> and then starts a <del><a href="https://github.com/hardcodes/doorAction.sh.git">batch script</a></del> that mounts a drive on a NAS system, records a videofile with <code>raspivid</code> and unmounts the drive again. Start <code>gpioObserver</code> from <code>crontab</code>, e.g. like</p>
 <p><code>@reboot /bin/sudo /usr/local/bin/gpioObserver 17 1 /home/picam/doorAction.sh &gt;&gt; /home/picam/log/doorAction.log 2&gt;&amp;1</code></p>
 <p><img src="./gfx/59.jpg" alt="" /></p>
 <p><em>TADA</em> - your poor man's surveillance system with Raspberry Pi</p>
@@ -1772,6 +1772,21 @@ To make it clear: this is a great and usable phone! It just needs some polish to
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
