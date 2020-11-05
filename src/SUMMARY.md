@@ -78,3 +78,8 @@
 - [20140619 - Ding dong - the switch is dead](./20140619--1.md)
 - [20140803 - Farewell Jolla](./20140803--1.md)
 - [20140830 - Do it yourself](./20140830--1.md)
+- [20140918 - Build CEGUI dependencies on OSX](./20140918--1.md)
+- [20140918 - Build CEGUI library on OSX](./20140918--2.md)
+- [20140920 - Build ZeroMQ on OSX](./20140920--1.md)
+- [20141230 - Build cmake command-line tool on OSX](./20141230--1.md)
+- [20150125 - Swing like a pendulum](./20150125--1.md)
