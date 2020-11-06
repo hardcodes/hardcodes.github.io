@@ -191,7 +191,7 @@ $ make
 $ sudo make install
 </code></pre>
 <p>The executable will be installed as <code>/user/local/bin/gpioObserver</code>. You can <code>sudo</code> it as user <code>pi</code> or add a new user and work on <code>/etc/sudoers</code> if you want that task separated.</p>
-<p><code>gpioObserver</code> waits for a signal change from <code>0</code> to <code>1</code> and then starts a <del><a href="https://github.com/hardcodes/doorAction.sh.git">batch script</a></del> that mounts a drive on a NAS system, records a videofile with <code>raspivid</code> and unmounts the drive again. Start <code>gpioObserver</code> from <code>crontab</code>, e.g. like</p>
+<p><code>gpioObserver</code> waits for a signal change from <code>0</code> to <code>1</code> and then starts the batch script <code>doorAction.sh</code> that mounts a drive on a NAS system, records a videofile with <code>raspivid</code> and unmounts the drive again. Start <code>gpioObserver</code> from <code>crontab</code>, e.g. like</p>
 <p><code>@reboot /bin/sudo /usr/local/bin/gpioObserver 17 1 /home/picam/doorAction.sh &gt;&gt; /home/picam/log/doorAction.log 2&gt;&amp;1</code></p>
 <p><img src="./gfx/59.jpg" alt="" /></p>
 <p><em>TADA</em> - your poor man's surveillance system with Raspberry Pi</p>
@@ -235,6 +235,21 @@ $ sudo make install
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
