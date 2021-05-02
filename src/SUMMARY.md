@@ -1,5 +1,6 @@
 # Summary
 
+- [20210502 - Going Solarish](./20210502--1.md)
 - [20150125 - Swing like a pendulum](./20150125--1.md)
 - [20141230 - Build cmake command-line tool on OSX](./20141230--1.md)
 - [20140920 - Build ZeroMQ on OSX](./20140920--1.md)
