@@ -1,5 +1,6 @@
 # Summary
 
+- [20211208 - Failing to switch the christmas lights](./20211208--1.md)
 - [20211130 - Getting a little rusty](./20211130--1.md)
 - [20210502 - Going Solarish](./20210502--1.md)
 - [20150125 - Swing like a pendulum](./20150125--1.md)
