@@ -235,7 +235,7 @@
 </ul>
 </li>
 <li>
-<p>Then I <a href="./examples/bluepill-hardcoded-take1.rs">hard coded</a> (can you say hardcodes?) the values to switch on a socket via channel <em>A</em> into the code and watched the result with an oscilloscope.</p>
+<p>Then I <a href="https://github.com/hardcodes/switch-433mhz-socket/tree/main/examples/bluepill-hardcoded-take1.rs">hard coded</a> (can you say hardcodes?) the values to switch on a socket via channel <em>A</em> into the code and watched the result with an oscilloscope.</p>
 <ul>
 <li>
 <p>That looked promising:</p>
@@ -369,6 +369,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
