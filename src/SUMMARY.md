@@ -1,5 +1,6 @@
 # Summary
 
+- [20230411 - Dude where is my privacy?](./20230411--1.md)
 - [20211208 - Failing to switch the christmas lights](./20211208--1.md)
 - [20211130 - Getting a little rusty](./20211130--1.md)
 - [20210502 - Going Solarish](./20210502--1.md)
